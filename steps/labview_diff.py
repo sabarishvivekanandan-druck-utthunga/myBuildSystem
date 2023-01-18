@@ -37,7 +37,7 @@ def diff_vi(old_vi, new_vi, output_dir, operations_dir, lv_version, lv_bitness):
     if old_vi:
         command_args.extend(["-OldVI", old_vi])
 
-    subprocess.call(["taskkill", "/IM", "labview.exe", "/F"])
+    subprocess.call(["taskkill", "/IM", "LabVIEW.exe", "/F"])
     try:
         subprocess.check_call(command_args)
     except subprocess.CalledProcessError:

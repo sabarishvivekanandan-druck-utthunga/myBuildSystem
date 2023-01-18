@@ -30,7 +30,7 @@ def build_lv_project(project_path, target_name, build_spec_name, lv_version, lv_
         "-BuildSpecName",
     ]
 
-    subprocess.call(["taskkill", "/IM", "labview.exe", "/F"])
+    subprocess.call(["taskkill", "/IM", "LabVIEW.exe", "/F"])
     try:
         subprocess.check_call(command_args)
     except subprocess.CalledProcessError:

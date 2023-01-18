@@ -28,7 +28,7 @@ def run_unit_tests(project_path, report_path, lv_version, lv_bitness):
         "-JUnitReportPath", report_path,
     ]
     
-    subprocess.call(["taskkill", "/IM", "labview.exe", "/F"])
+    subprocess.call(["taskkill", "/IM", "LabVIEW.exe", "/F"])
     
     try:
         subprocess.check_call(command_args)
