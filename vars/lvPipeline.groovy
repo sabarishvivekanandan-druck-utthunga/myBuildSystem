@@ -18,7 +18,7 @@ def call(lvProjectPath, lvBuildSpecName, lvVersion, lvBitness) {
 			label 'LabVIEWTestPC1'
 		}
 		
-
+    stages{
 		stage ('Pre-Clean'){
 		preClean()
 		}
@@ -87,6 +87,7 @@ def call(lvProjectPath, lvBuildSpecName, lvVersion, lvBitness) {
 				}
 			}
 		}
+	}
 	}
 }
 
