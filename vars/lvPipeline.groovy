@@ -88,6 +88,7 @@ def call(lvProjectPath, lvBuildSpecName, lvVersion, lvBitness) {
 			}
 		}
 	}
-	}
+	
+}
 }
 
