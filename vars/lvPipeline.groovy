@@ -10,15 +10,13 @@ def call(lvProjectPath, lvBuildSpecName, lvVersion, lvBitness) {
 		lvVersion="2022"
 		break
 	}
-
-	node {
-		  echo 'Starting Build...'
-		
-		agent{
+	agent{
 			label 'LabVIEWTestPC1'
 		}
 		
-    stages{
+	node {
+		  echo 'Starting Build...'
+		
 		stage ('Pre-Clean'){
 		preClean()
 		}
@@ -90,5 +88,5 @@ def call(lvProjectPath, lvBuildSpecName, lvVersion, lvBitness) {
 	}
 	
 }
-}
+
 
