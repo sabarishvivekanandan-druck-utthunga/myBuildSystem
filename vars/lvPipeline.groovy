@@ -11,7 +11,7 @@ def call(lvProjectPath, lvBuildSpecName, lvVersion, lvBitness) {
 		break
 	}
 
-	pipeline {
+	node {
 		agent{
 			label 'LabVIEWTestPC1'
 		}
