@@ -1,3 +1,7 @@
+agent{
+			// label 'LabVIEWTestPC1'
+			label 'LabVIEW2'
+		}
 #!/usr/bin/env groovy
 def PULL_REQUEST = env.CHANGE_ID
 
@@ -12,10 +16,7 @@ def call(lvProjectPath, lvBuildSpecName, lvVersion, lvBitness) {
 	}
 
 	node {
-		agent{
-			label 'LabVIEWTestPC1',
-			label 'LabVIEW2'
-		}
+		
 		
 		  echo 'Starting Build...'
 		
