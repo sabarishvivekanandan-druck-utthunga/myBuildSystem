@@ -13,7 +13,8 @@ def call(lvProjectPath, lvBuildSpecName, lvVersion, lvBitness) {
 
 	node {
 		agent{
-			label 'LabVIEWTestPC1'
+			label 'LabVIEWTestPC1',
+			label 'LabVIEW2'
 		}
 		
 		  echo 'Starting Build...'
