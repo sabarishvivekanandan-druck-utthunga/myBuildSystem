@@ -1,8 +1,9 @@
+#!/usr/bin/env groovy
 agent{
 			// label 'LabVIEWTestPC1'
 			label 'LabVIEW2'
 		}
-#!/usr/bin/env groovy
+
 def PULL_REQUEST = env.CHANGE_ID
 
 //ENTER THE ABOVE INFORMATION
