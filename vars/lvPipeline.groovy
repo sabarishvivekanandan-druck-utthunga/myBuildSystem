@@ -1,4 +1,5 @@
 #!/usr/bin/env groovy
+node {
 agent{
 			// label 'LabVIEWTestPC1'
 			label 'LabVIEW2'
@@ -16,7 +17,7 @@ def call(lvProjectPath, lvBuildSpecName, lvVersion, lvBitness) {
 		break
 	}
 
-	node {
+	
 		
 		
 		  echo 'Starting Build...'
